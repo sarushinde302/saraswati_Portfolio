@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@keyframes fadeInOut {
+    0%, 100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  .animate-fade-in-out {
+    animation: fadeInOut 2s infinite;
+  }
+  
+  /* Add this to your global CSS file or inside your Tailwind CSS config */
+body {
+  margin: 0;
+  background-color: black;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+section {
+  padding: 100px;
+  border-bottom: 1px solid #ccc;
+}
+
